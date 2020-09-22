@@ -1,0 +1,232 @@
+---
+title: "TODO"
+author: "Phil Steinke <phil@tgrrr.com> <s3725547@student.rmit.edu.au>"
+subtitle: "TODO:"
+output:
+  html_document:
+    toc: yes
+    df_print: paged
+  pdf_document:
+    toc: yes
+    df_print: kable
+    fig_width: 7
+    fig_caption: yes
+    html_document:
+      number_sections: no
+      theme: cerulean
+      highligt: pygments
+---
+
+## Introduction*
+- **Goals/Objectives**
+	- Analyse the ...
+	- Use the analysis method...
+	- Chose the best model from ...
+	- Provide forecast for next 5 years
+
+- **Interest** Describe why it is interesting to answer the questions / meet the goal of this topic
+- **Obstacles** What obstacles do we need to overcome?
+- **Data Collection** - Describe how you collected the data, and briefly why you chose that approach
+	- eg. A sample of 252 men and women from was obtained from [text](link)
+- **how evaluated** (hypothesis, diagnostics, etc)
+	> eg. The data which was collected was then visualised to find any potential outliers and form hypothesis to test.
+- TODO: **Methodology**
+- Problem Statement
+
+- H<sub>0</sub>:
+- H<sub>a</sub>:
+
+<!-- --------------------- -->
+
+## Data Inspection
+
+### Data description*
+**A clear description of data and its source should be provided in this section.**
+
+- Read/Import Data
+Read/Import Data:
+```{r}
+library('here')
+DATA_FILE <- here('src', 'data', 'TODO:.csv')
+data <- read.csv(DATA_FILE)
+head(data, 5)
+```
+
+- Inspect and Understand
+- Report some statistics of your collected data
+
+#### Dimensions and attributes
++ plots
+
+```{r}
+# check the dimensions of the data frame.
+dim(data)
+attributes(data)
+```
+
+#### Features 
+
+Features in this data set are as follows:
+- Feature Name
+- Data Type
+- Description
+- check the data types (i.e., character, numeric, integer, factor, and logical) of the variables in the data set.
+
+`TODO:.csv` includes the following variables:
+| Feature | Description | Unit of measurement | data type |
+|---------|-------------|---------------------|-----------|
+|         |             |                     |           |
+
+<!-- - as a docstring:
+```{r}
+#' Prices of 50,000 round cut diamonds
+#'
+#' A dataset containing the prices and other attributes of almost 54,000
+#'  diamonds. The variables are as follows:
+#'
+#' \itemize{
+#'   \item price. price in US dollars (\$326--\$18,823)
+#'   \item carat. weight of the diamond (0.2--5.01)
+#'   \item cut. quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+#'   \item colour. diamond colour, from J (worst) to D (best)
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name diamonds
+#' @usage data(diamonds)
+#' @format A data frame with 53940 rows and 10 variables
+``` -->
+
+- Describe what/who is your selected data 
+
+### Testing Assumption of Homoscedasticity
+
+<!-- TODO: plots -->
+<!-- TODO: - H<sub>0</sub>: α = 0
+- H<sub>a</sub>: α ≠ 0 -->
+
+
+<!-- TODO: -->
+
+<!-- FIXME: -->
+<!-- ```{r}
+mplot(bodyAbdomenMaxModel, 1)
+```
+
+```{r}
+xyplot(Abdomen ~ BFP_Brozek, data = body, ylab = "Abdomen", xlab = "BFP_Brozek", panel=panel.lmbands)
+```
+
+```{r}
+pf(489.9,1,250,lower.tail = FALSE ) # 7.71020869865819e-61
+```
+p (7.71020869865819e-61) is less than the  Confidence Level -->
+<!-- Therefore we can reject the null hypothesis -->
+
+### Confidence Interval
++ plots
+```{r}
+confint(bodyAbdomenMaxModel, level = .99)
+```
+
+#### Test Intercept (α)
++ plots
+
+- H<sub>0</sub>: α = 0
+- H<sub>a</sub>: α ≠ 0
+
+### Distribution Fitting
+
+- histogram
+- compare the data to a normal distribution
+
+<!-- --------------------- -->
+
+## Data Visualisation
+
+## Transformation
+<!-- aka preprocessing/cleaning/transform -->
+
+- Check the column names in the data frame, rename them if required.
+- Describe what pre-processing you performed
+- Show examples of noisy data, plot some graphs, etc to show why you decided to do those pre-processing
+- Normalisation
+- Transform
+
+<!-- --------------------- -->
+
+## Model
+
+- Algorithm Performance Analysis
+
+<!-- --------------------- -->
+
+## Diagnostics
+
+- Error Checking
+
+### Testing the Residuals
+
+```{r}
+qqPlot(data$residuals, dist="norm")
+```
+
+<!-- --------------------- -->
+
+## Forecast
+
+<!-- --------------------- -->
+
+## Analysis
+
+Analysis Approach
+
+- Describe what analysis you performed to answer the questions
+- What type of analysis did you do?  Briefly explain your rationale for doing it as such.
+- What type of modelling did you do?  Again, briefly explain your rationale for your approach.
+
+Analysis & Insights
+
+- Present your analysis, to answer the questions 
+- Present and discuss your insights
+- Use plots, tables, example of prints, visualisation, word clouds etc that supports your analysis and insights
+
+<!-- --------------------- -->
+## Conclusion
+_Provide a short conclusion about your entity, analysis and what you found_
+
+- Going back to your problem statement, what insight has been gained from the investigation? Discuss the extent to how your theoretical normal distribution fits the empirical data.
+- You will end by discussing the extent to how your theoretical normal distribution fits the empirical data and make recommendations regarding the modelling of this body measurement.
+
+- dot point 1
+- dot point 2
+- dot point 3
+
+## My Recommendation:
+
+- dot point 1
+- dot point 2
+- dot point 3
+
+### Limitations of Report
+- Our methodology has several weaknesses and limitations:
+	- Sample size
+	- These limitations were put in place to reduce execution time; to improve the accuaracy of these models in future the hyperparameters of each algorithm could be further optimised
+	- As our data required us to perform regression our only performance metric was mean squared error.
+	- Please note that the dataset is quite small, so we have limited most of our decisions to programatic output
+	- execution time was ...
+
+### Summary
+
+- H<sub>0</sub>:
+- H<sub>a</sub>:
+
+The results of the above tests summarised:
+- p-value(0.02) < 0.05 in our adfTest
+- ma2 and ma1 p < 0.05 in coefficient test
+- Residuals are not apparent in arima(1,4,0) and arima(0,4,2)
+The AIC and BIC score for is higher for arima(0,4,2), which is why we have selected {arima(0,4,2)} as our best fitting time-series model
+- The t-test p-value is significant (p < 0.05) when we compare it to both the Neural Network, and the Decision Tree model.
+
+## Bibleography / Sources
