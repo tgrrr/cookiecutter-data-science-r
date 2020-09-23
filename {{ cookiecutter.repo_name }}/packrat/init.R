@@ -59,7 +59,10 @@ local({
         setwd(.rs.getProjectDirectory())
         on.exit(setwd(owd), add = TRUE)
       }
-      source("packrat/init.R")
+	  if (!requireNamespace("here"))
+	    install.packages("here")
+      library(here)
+	  source(here("packrat", "init.R"))
     })
     return(invisible(NULL))
   }

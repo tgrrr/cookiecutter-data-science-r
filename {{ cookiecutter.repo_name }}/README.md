@@ -1,6 +1,6 @@
-# {{cookiecutter.project_name}}
+# r-categorical-forecast-doctor-no-shows
 
-{{cookiecutter.description}}
+Categorical report to forecast Doctor no-shows in clinics
 
 ## Getting started
 
@@ -11,7 +11,7 @@
 Alternatively, you can install using [Docker](https://hub.docker.com/_/r-base) or [Ansible](https://github.com/Oefenweb/ansible-r) on Ubuntu.
 <!-- TODO: add Ansible playbooks and Docker installs for different systems -->
 
-Homebrew is great, but I currently avoid it for R, because of a number of bugs.
+Homebrew is great, but I currently avoid using it to install R, because of a number of bugs.
 
 2. Edit the `setup.R` file to include any packages you need
 
@@ -21,7 +21,21 @@ Homebrew is great, but I currently avoid it for R, because of a number of bugs.
 $ Rscript ./setup.R
 ```
 
-See the [filestructure]({{ cookiecutter.repo_name }}/FILESTRUCTURE.md)
+## Exporting as PDF (aka Knitting)
+
+Dependencies:
+
+```zsh
+$ brew install pandoc pandoc-citeproc mactex # or basictex
+```
+
+To export Rmarkdown files to latex. In terminal run:
+
+```zsh
+$ Rscript -e 'rmarkdown::render("notebooks/Phase01.Rmd")'
+```
+
+See the [filestructure](r-categorical-forecast-doctor-no-shows/FILESTRUCTURE.md)
 
 <!-- TODO: Running the tests -->
 

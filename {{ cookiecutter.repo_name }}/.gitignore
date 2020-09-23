@@ -67,7 +67,7 @@ target/
 .idea
 
 # VS Code
-.vscode/
+# .vscode/
 
 # Spyder
 .spyproject/
@@ -88,3 +88,7 @@ target/
 # Mypy cache
 .mypy_cache/
 packrat/lib*/
+
+# R Studio files
+.Rproj.user
+.Rhistory
