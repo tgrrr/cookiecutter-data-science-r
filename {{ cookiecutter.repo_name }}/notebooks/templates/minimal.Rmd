@@ -23,7 +23,7 @@ output:
 
 by: {{cookiecutter.author_name}} {{cookiecutter.author_email}}
 
-## Introduction*
+## Introduction
 
 {{cookiecutter.description}}
 

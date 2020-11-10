@@ -27,6 +27,14 @@ If you have install problems with R 4.02, try running:
 ```{r}
 echo '.libPaths("/renv/lib/x86_64-apple-darwin17.0/4.0.2")' >> /usr/local/lib/R/etc/Rprofile.site
 ```
+## Lint
+
+```zsh
+$ devtools::install_github("REditorSupport/languageserver")
+$ Rscript functions/lint.R
+```
+
+## Exporting as PDF or HTML (aka Knitting)
 
 ## Run models and R code from the command line
 
@@ -61,4 +69,18 @@ Rscript -e 'rmarkdown::render("notebooks/{{cookiecutter.project_name}}.Rmd")'; o
 [filestructure]: {{cookiecutter.project_name}}/FILESTRUCTURE.md
 [Bookdown recommends]: https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html
 
-<p><small>Forked from <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+### Tests
+
+In R:
+
+```r
+testthat::test_dir('tests')
+```
+
+How to write tests: https://kbroman.org/pkg_primer/pages/tests.html
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+## Contributors
+
+{{cookiecutter.author_name}} {{cookiecutter.author_email}}

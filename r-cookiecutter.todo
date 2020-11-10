@@ -1,0 +1,45 @@
+# R Cookiecutter todos
+
+Docs:
+	☐ citation howto @created(20-11-10 15:28)
+
+Integrate other Templates:
+	☐ Assignment starter @created(20-11-10 15:24)
+	☐ Uni @created(20-11-10 16:36)
+	☐ Readme files uni @created(20-11-10 16:36)
+	☐ model diagrams library @created(20-11-10 15:55)
+
+Devops:
+☐ VSCode snippets with captions @created(20-11-10 15:29)
+☐ Github actions https://gist.github.com/jimbrig/b698aae7a4fcb2b195f4686082f17618 @created(20-11-10 15:46)
+☐ Check if renv already exists in setup.R @created(20-11-10 15:22)
+☐ Add minimal option to setup @created(20-11-10 15:37)
+
+Tests and code quality:
+☐ Check ansible and docker setups work Readme: Alternatively, you can install using [Docker](https://hub.docker.com/_/r-base) or [Ansible](https://github.com/Oefenweb/ansible-r) on Ubuntu. @created(20-11-10 15:25)
+☐ lintr @created(20-11-10 15:28)
+☐ Debugging R 4.02 with renv in Slack @created(20-11-10 15:28)
+☐ Add Ansible playbooks and Docker installs for different system @created(20-11-10 15:28)
+
+Packagr:
+	Setup grace from devtools::install_git('https://gitlab.com/botbotdotdotcom/packagr')
+		```
+		# install.packages('devtools')
+		# library(packagr)
+		# packagr(packages) # alpha package to check, install and load packages
+		```
+
+Archive:
+  ✔ Import partial sections in rmarkdown template @created(20-11-10 15:47) @done(20-11-10 16:39)
+  ✔ Author details in Rmarkdown header @created(20-11-10 15:28) @done(20-11-10 16:35)
+  ✔ Add tufte to header @created(20-11-10 16:27) @done(20-11-10 16:35)
+  ✔ Readme: Running the tests @created(20-11-10 15:23) @done(20-11-10 16:14)
+  ✔ dynamic fields in rmarkdown heading author title, subtitle @created(20-11-10 15:54) @done(20-11-10 16:27)
+  ✔ update file structure diagram @created(20-11-10 15:55) @done(20-11-10 15:55)
+  ✔ change notebooks/Phase01.Rmd to {{cookiecutter-whatever}} in readme and filename in how to knit @done(20-11-10 15:47)
+  ✔ change to {{cookiecutter-whatever}} in readme header @created(20-11-10 15:46) @done(20-11-10 15:46)
+  ✔ move to renv @done(20-11-10 15:46)
+  ✔ Latex resources @created(20-11-10 15:22) @done(20-11-10 15:22)
+  
+  ✔ add model file called {{cookiecutter...}} @created(20-11-10 15:22) @done(20-11-10 15:22)
+  ✔ Remove python interpreter option in cookiecutter setup @created(20-11-10 15:26) @done(20-11-10 15:26)
