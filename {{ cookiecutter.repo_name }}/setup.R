@@ -1,21 +1,13 @@
-#     version='0.1.0',
-#     description='',
-#     author='Phil Steinke',
-#     license='',
+if (!requireNamespace('here'))
+  install.packages('here')
+library('here')
 
-# TODO: add required packages
-packages = c('packrat','here','ggplot2', 'ggpubr', 'ks', 'parallel')
-lapply(packages, install.packages)
+if (!requireNamespace('renv'))
+  install.packages('renv')
+library('renv')
 
-# TODO: "lintr"
-# TODO:
-# install.packages('devtools')
-# devtools::install_git('https://gitlab.com/botbotdotdotcom/packagr')
-# library(packagr)
-# packagr(packages) # alpha package to check, install and load packages
+renv::init()
 
-# TODO: update packrat to remotes. I currently have a bug with this
-# if (!requireNamespace("remotes"))
-#   install.packages("remotes")
-
-# from setuptools import find_packages, setup
+packages <- scan(here('requirements.txt'), what="", sep='\n')
+source(here('src','utils','install_load_packages.R'))
+install_load_packages(packages)

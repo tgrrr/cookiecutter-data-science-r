@@ -87,7 +87,6 @@ target/
 
 # Mypy cache
 .mypy_cache/
-packrat/lib*/
 
 # R Studio files
 .Rproj.user

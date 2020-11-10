@@ -44,8 +44,8 @@ output:
 **A clear description of data and its source should be provided in this section.**
 
 - Read/Import Data
-Read/Import Data:
-```{r}
+
+```{r read and import data}
 library('here')
 DATA_FILE <- here('src', 'data', 'TODO:.csv')
 data <- read.csv(DATA_FILE)

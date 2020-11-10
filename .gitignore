@@ -44,8 +44,5 @@ docs/
 # translation temp files
 po/*~
 
-# Packrat
-packrat/lib*/
-# !packrat/bundles/*
-
 old/**/*
+assignment starter

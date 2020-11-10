@@ -7,6 +7,9 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 
 ### Requirements to use the cookiecutter template:
+
+Even though this is for R, cookiecutter still requries Python to setup and install
+
 -----------
  - Python 2.7 or 3.5
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
@@ -26,8 +29,9 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
-
+```zsh
+$ cookiecutter github.com/tgrrr/cookiecutter-data-science-r
+```
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
 
@@ -90,9 +94,15 @@ We welcome contributions! [See the docs for guidelines](https://drivendata.githu
 ### Installing development requirements
 ------------
 
-    pip install -r requirements.txt
+add R packages to `requirements.txt`
 
-### Running the tests
+Install packages with `renv`:
+
+```zsh
+$ Rscript ./setup.R
+```
+
+<!-- ### Running the tests
 ------------
 
-    py.test tests
+    py.test tests -->
