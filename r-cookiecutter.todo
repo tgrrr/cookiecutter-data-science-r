@@ -30,7 +30,39 @@ Packagr:
 		# library(packagr)
 		# packagr(packages) # alpha package to check, install and load packages
 		```
+---
 
+From Asso3 baysian:
+
+For cookiecutter template:
+	set cran mirror
+	fix setup.R install_packages bug
+	tufte
+	tufte in requirements
+	style.css add
+	Rscript -e 'rmarkdown::render("notebooks/ass03-bayesian-charity-notebook.Rmd", output_dir="out")'; osascript -e 'display notification "rmarkdown is knitted" with title "Done"'
+
+
+
+	---
+	title: "Untitled"
+	author: "Me"
+	date: "`r format(Sys.time(), '%d %B, %Y, %H:%M')`"
+	knit: (function(inputFile, encoding) { 
+		  rmarkdown::render(inputFile,
+							encoding=encoding, 
+							output_file=file.path(dirname(inputFile), out_dir, 'analysis.html')) })
+	output:
+	  html_document:
+		number_sections: yes
+		toc: yes
+	---
+
+
+
+
+---
+		
 Archive:
   ✔ Import partial sections in rmarkdown template @created(20-11-10 15:47) @done(20-11-10 16:39)
   ✔ Author details in Rmarkdown header @created(20-11-10 15:28) @done(20-11-10 16:35)
