@@ -1,15 +1,46 @@
 # R Cookiecutter todos
 
+☐ Rename templates to . @created(20-12-16 08:39)
+	☐ Update templates @created(20-12-16 08:51)
+	☐ broken up into different report sections @created(20-12-16 08:41)
+☐ Check file load and renv @created(20-12-16 08:37)
+
+☐ dvc @created(20-12-16 08:37)
+	setup for data folder
+	docs
+
+☐ Citation howto @created(20-12-16 08:40)
+	☐ bibleography file @created(20-12-16 08:40)
+
+Notebooks:
+	☐ notebooks into `out` folder @created(20-12-16 08:41)
+	☐ In template and @created(20-12-16 08:51)
+	☐ tufte @created(20-12-16 08:50)
+
+☐ rename git master to main @created(20-12-16 08:49)
 ☐ git init throughout @created(20-11-11 13:59)
+
+Quick and easy:
+✔ requirements.txt favourites in examples @created(20-12-16 08:57) @done(20-12-16 08:57)
+☐ code snippets @created(20-12-16 08:50)
+functions
+	doHistograms
+	doScatterPlots
+	theme.R file
+	visualisationMatrix
+	☐ Tests @created(20-12-16 08:41)
 
 Docs:
 	☐ citation howto @created(20-11-10 15:28)
+	☐ Major readme update @created(20-12-16 08:50)
 
 Integrate other Templates:
 	☐ Assignment starter @created(20-11-10 15:24)
 	☐ Uni @created(20-11-10 16:36)
 	☐ Readme files uni @created(20-11-10 16:36)
 	☐ model diagrams library @created(20-11-10 15:55)
+
+☐ Code gen with hygen @created(20-12-16 08:52)
 
 Devops:
 ☐ VSCode snippets with captions @created(20-11-10 15:29)
@@ -31,6 +62,8 @@ Packagr:
 		# packagr(packages) # alpha package to check, install and load packages
 		```
 ---
+
+remove option for python/python3
 
 From Asso3 baysian:
 
