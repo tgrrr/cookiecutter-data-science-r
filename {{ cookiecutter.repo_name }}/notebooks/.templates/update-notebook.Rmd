@@ -1,0 +1,135 @@
+---
+title: ass03-bayesian-charity
+subtitle: Baysian analysis of expected charity donations
+author: "Phil Steinke phil@tgrrr.com"
+bibliography: bibliography.bib
+link-citations: yes
+output:
+  html_document:
+    toc: yes
+    df_print: paged
+  pdf_document:
+    toc: yes
+    df_print: kable
+    fig_width: 7
+    fig_caption: yes
+    html_document:
+      number_sections: no
+      theme: cerulean
+      highligt: pygments
+---
+
+# Bayesian Australian Charity analysis
+
+by: Phil Steinke phil@tgrrr.com
+
+## Introduction*
+
+Baysian analysis of expected charity donations
+TODO: Notes about charities
+struggling with Covid
+
+## Data Inspection
+
+```{r}
+data_child_docs <- "_data.Rmd"
+```
+```{r, child = data_child_docs}
+```
+
+# Prior (15%):
+<!-- Rubric:
+- Specify suitable prior distributions and specify appropriate values for the parameters of prior distributions (15%)
+- All the prior distributions match with the domain of the corresponding parameter
+- suitable explanations on the prior knowledge and the degree of belief in it are given
+- both mean and variance of the prior distribution reflect the prior information and the degree of belief in the prior in a suitable way
+- suitable priors are specified for model selection
+- different prior distributions or parameter values have been considered to assess the sensitivity of results to the prior distributions. -->
+
+```{r}
+prior_child_docs <- "_prior.Rmd"
+```
+```{r, child = prior_child_docs}
+```
+
+# Model
+
+```{r}
+model_child_docs <- "_model.Rmd"
+```
+```{r, child = model_child_docs}
+```
+
+# Model diagram:
+
+<!-- Rubric:
+- Prepare a suitable JAGS model daigram and reflect it on the model text for JAGS implementation (%10)
+- A model diagram and the corresponding model text is provided
+- model selection is considered and implemented correctly
+- in the model diagram and the corresponding model text, there are some attempts to improve the model to run the MCMC faster and these attempts are clearly articulated in the report.
+Apply the Bayes theorem
+JAGS implements the correct model and the model diagram shows the correct model with no errors -->
+
+# Posterior Distribution (15%)
+
+<!-- Rubric:
+- Interpret the posterior distributions, Bayesian point and interval estimates and conduct hypothesis tests in an informative way
+- The Bayesian point and interval estimates are interpreted correctly in a comparative way to demonstrate the impact of informativeness. 
+- Hypothesis tests are conducted using suitable results
+- The results are interpreted in a way to fulfil the given tasks, they are linked to the tasks
+- Multiple prior distributions are used to demonstrate the sensitivity of the results in all tasks to the changes in the degree of informativeness
+There is no unsuitable/incorrect interpretation of the results.  -->
+
+```{r}
+posterior_child_docs <- "_posterior.Rmd"
+```
+```{r, child = posterior_child_docs}
+```
+
+
+# Diagnostics (15%):
+<!-- Rubric:
+- the reason behind doing the adjustments are explained clearly
+- the results are articulated in a way to demonstrate a good understanding of diagnostic checking
+- the efficiency of the implemented MCMC method is improved by suitable adjustments in burn-in, number of chains and thinning
+
+- Conduct a comprehensive diagnostic checking to validate the assumptions of the fitted models
+- All the tools/statistics/measures covered in the course for diagnostic checking are applied and both representativeness and accuracy of the generated chains are validated
+- the comments made on the results are all correct and suitable
+- Apply the Bayes theorem 		 -->
+<!-- Residuals Error Checking -->
+
+```{r}
+model_child_docs <- "_diagnosistics.Rmd"
+```
+```{r, child = model_child_docs}
+```
+
+## Analysis
+
+```{r}
+analysis_child_docs <- "_analysis.Rmd"
+```
+```{r, child = analysis_child_docs}
+```
+
+## Conclusion
+
+<!-- TODO: CHECK AT THE END
+# Report (25%):
+	- every single table/figure has a figure/table number and an informative title
+	- a technically sound (correct) comment made on each presented output
+
+✔ Presentation (5%) @created(20-11-11 16:48) @done(20-11-11 16:48)
+
+# Quality of data (5%):
+	- Problem solved with the analysis of data is described in a very clear way to highlight its practical importance
+
+# Code (10%):
+- suitable explanations are given on the code
+- suitable title, axes- labels, and legends are added on the plots by the codes -->
+
+## References
+<!-- This is required to attach the bibliography -->
+
+
