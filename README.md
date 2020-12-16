@@ -4,7 +4,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 
 ### Requirements to use the cookiecutter template:
 
-Even though this is for R, cookiecutter still requries Python to setup and install
+Even though this template is for R, cookiecutter still requries Python
 
 -----------
  - Python 2.7 or 3.5
@@ -24,11 +24,17 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
+1. Run the following
+
 ```zsh
 $ cookiecutter github.com/tgrrr/cookiecutter-data-science-r
 ```
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
+
+2. Follow the prompts, including entering your project name, git repo, etc
+
+3. 
 
 ## Contributing
 

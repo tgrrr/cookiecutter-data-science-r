@@ -27,6 +27,7 @@ If you have install problems with R 4.02, try running:
 ```{r}
 echo '.libPaths("/renv/lib/x86_64-apple-darwin17.0/4.0.2")' >> /usr/local/lib/R/etc/Rprofile.site
 ```
+
 ## Lint
 
 ```zsh
@@ -138,8 +139,10 @@ testthat::test_dir('tests')
 
 How to write tests: https://kbroman.org/pkg_primer/pages/tests.html
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
-
 ## Contributors
 
 {{cookiecutter.author_name}} {{cookiecutter.author_email}}
+
+<p><small>Project based on the <a target="_blank" href="https://github.com/tgrrr/cookiecutter-data-science-r">R cookiecutter data science project template</a>. 
+Which is originally based on <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
